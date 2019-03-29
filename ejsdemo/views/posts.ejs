@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1> This is Post Session </h1>
+
+<% for(var i=0; i < ejspost.length; i++){ %>
+<li><%= ejspost[i].title %> - <strong><%= ejspost[i].author %></strong></li>
+<% } %>
+
+<% ejspost.forEach(function(post){ %>
+<li><%= post.title %> - <strong><%= post.author %></strong></li>
+<% }) %> 
+
+<% include partials/footer %>
